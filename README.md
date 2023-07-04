@@ -2,9 +2,9 @@
 This machine learning modelling project is a continuity project from my [SQL-Analysis-DataVisualisation-Project](https://github.com/SieYung-Law/SQL-Analysis-DataVisualisation-Project) which is using a simulated company's trended performance data from [Maven](https://www.mavenanalytics.io/).
 
 Since the simulated dataset in the SQL course is focusing on sales/orders volume growth over the years, adjustments were made to the previous datasets for the time series forecasting purpose. I am comparing the performance of three different machine learning models, namely 
-      *  decision tree regressor, 
-      *  random forest regressor and 
-      *  xgboost regressor 
+     *  decision tree regressor, 
+     *  random forest regressor and 
+     *  xgboost regressor 
       
 Model perfomances are compared and the best model is selected for tuning its hyperparameters in order to improve its performace.    
 
