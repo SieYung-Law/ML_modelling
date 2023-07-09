@@ -50,13 +50,28 @@
 + Motivation: Develop accurable and actionable sales forecast
 + Data: Simulated eCommerce sales data from [Advance SQL with Maven](https://www.udemy.com/course/advanced-sql-mysql-for-analytics-business-intelligence/)
 + Data Preprosessing: Data transformation, handling categorical variable, feature engineering and feature selection
-+ Machine learning models: Comparison of Decision Tree, Random Forest and XGBoost Regressor
++ Machine Learning Models: Comparison of decision tree, random forest and xgboost regressor
   + time series train-test-split an K-fold cross validation
   + model performance: 
     |  3-fold cross validation  | Decision Tree | Random Forest | XGBoost   |
     |-------------------|-----------|---------------|--------------|
     | total RMSE   | 6271.91     | 5597.81        | 5306.47        |
 
+<!-- Data -->
+## Data 
++ 472871 entries of website sessions dataset and 32313 entries of orders restructured into 1096 entries of sales growth dataset
+![Daily sales plot](plots/daily_sales.png)
+
+## Data Preprocessing
++  Data Transformation: merging website sessions dataset and orders dataset into a suitable format for training the chosen machine learning models.
++  Handling Categorical Variables:  add black friday as binary variable.
++  Feature Engineering:  add lag features which transform time series dataset into supervised learning dataset.
++  Feature Selection:  using autocorrelation plot, feature importance scores and recursive feature selection to select meaningful features.
+
+## Model Building
++  Time series tran-test-split and k-fold cross validation which are specialised in dealing with time series forecasting
++  Performance comparison of three different machine learning models namely, decision tree, random forest and xgboost regressor
++  Best model is selected for hyperparameter tuning with random search cross validation in scikit-learn.
  ---------
       
 ## Tools used in this project
